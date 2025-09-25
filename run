@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Script de gestion rapide ScoreKeeper
+# Usage: sh run <commande>
+# Exemple: sh run android
+
+set -e
+
+case "$1" in
+  android)
+    echo "🚀 Lancement Android..."
+    npm run android
+    ;;
+  ios)
+    echo "🚀 Lancement iOS..."
+    npm run ios
+    ;;
+  web)
+    echo "🚀 Lancement Web..."
+    npm run web
+    ;;
+  *)
+    echo "❌ Commande inconnue: $1"
+    echo "Usage: sh run {android|ios|web}"
+    exit 1
+    ;;
+esac

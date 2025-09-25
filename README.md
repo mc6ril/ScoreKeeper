@@ -1,50 +1,40 @@
-# Welcome to your Expo app 👋
+# 🎴 ScoreKeeper
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📱 But de l’application
 
-## Get started
+ScoreKeeper est une application mobile **React Native + TypeScript** permettant de **compter les points** dans différents jeux de cartes traditionnels :
 
-1. Install dependencies
+-   Tarot
+-   Belote
+-   Coinche
 
-   ```bash
-   npm install
-   ```
+Elle ne remplace pas le jeu : son but est uniquement de **faciliter la gestion des scores**.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## ✨ Fonctionnalités prévues
 
-In the output, you'll find options to open the app in a
+-   Compter les points en fin de manche
+-   Gérer la rotation du donneur (belote/coinche)
+-   Calculer automatiquement les scores finaux selon les règles officielles
+-   Gérer les contrats (coinche, surcoinche, tarot garde/garde sans/garde contre)
+-   Suivre les annonces (belote/rebelote, carrés, etc.)
+-   Historique des parties
+-   Export/partage des scores
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🎨 Style et accessibilité
 
-## Get a fresh project
+-   L’interface est entièrement stylisée via un **système de thèmes** (`clair` et `sombre`).
+-   Les couleurs et styles passent par un hook unique : `useTheme`.
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🔮 Roadmap
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+-   [ ] MVP Tarot simple
+-   [ ] Ajout Belote
+-   [ ] Ajout Coinche
+-   [ ] Gestion avancée des annonces et contrats
+-   [ ] Historique + export CSV/PDF
